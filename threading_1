@@ -1,0 +1,13 @@
+import threading
+import time
+# make a def :
+def do_it ():
+print("sleeping 1 sec")
+time.sleep(1)
+print("done sleeping...")
++++
+t1= threading.Thread(target=do_it)
+t2= threading.Thread(target=do_it)
+# to run the thread :
+t1.start()
+t2.start()
